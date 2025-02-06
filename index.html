@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>語彙（1-30）練習問題</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url('https://chatgpt.com/c/672a2941-51d0-800b-939d-e73d400696c5');
+            background-size: 200px 200px;
+            background-repeat: repeat;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .answers {
+            margin-left: 20px;
+        }
+        .answers label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .question input[type="radio"] {
+            display: none;
+        }
+        .question input[type="radio"]:checked + label {
+            background-color: #d0ebff;
+            color: black;
+        }
+        .check-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .check-btn:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .correct::before {
+            content: '✔';
+            color: #0066cc;
+            position: absolute;
+            left: -25px;
+            top: 7px;
+            font-size: 1em;
+        }
+        .correct {
+            background-color: #d0ebff !important;
+            color: black !important;
+        }
+        .incorrect::before {
+            content: '✖';
+            color: #cc0000;
+            position: absolute;
+            left: -25px;
+            top: 7px;
+            font-size: 1em;
+        }
+        .incorrect {
+            background-color: #ffcccc !important;
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+
+<h2>語彙（1-30）練習問題</h2>
+
+<h3>問題 1: (        ) に入れるのに最もよいものを、1・2・3・4 から一つ 選びなさい。</h3>
+
+<div class="question">
+    <h3>1. あの子は親の行動の（　　　）をするのが好きなようだ。</h3>
+    <div class="answers">
+        <input type="radio" id="q1-1" name="q1" value="1"><label for="q1-1">1) 出産</label>
+        <input type="radio" id="q1-2" name="q1" value="2"><label for="q1-2">2) 能力</label>
+        <input type="radio" id="q1-3" name="q1" value="3"><label for="q1-3">3) 真似</label>
+        <input type="radio" id="q1-4" name="q1" value="4"><label for="q1-4">4) 夫婦</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>2. 十分に（　　　）取っていなくて、体がいつもだるい。</h3>
+    <div class="answers">
+        <input type="radio" id="q2-1" name="q2" value="1"><label for="q2-1">1) 寿命</label>
+        <input type="radio" id="q2-2" name="q2" value="2"><label for="q2-2">2) 食欲</label>
+        <input type="radio" id="q2-3" name="q2" value="3"><label for="q2-3">3) 外食</label>
+        <input type="radio" id="q2-4" name="q2" value="4"><label for="q2-4">4) 睡眠</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>3. うちの子は（　　　）が豊かだ。</h3>
+    <div class="answers">
+        <input type="radio" id="q3-1" name="q3" value="1"><label for="q3-1">1) 水泳</label>
+        <input type="radio" id="q3-2" name="q3" value="2"><label for="q3-2">2) 将来</label>
+        <input type="radio" id="q3-3" name="q3" value="3"><label for="q3-3">3) 旅行</label>
+        <input type="radio" id="q3-4" name="q3" value="4"><label for="q3-4">4) 才能</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>4. 亡くなった（　　　）はいつも見守ってくれていると信じています。</h3>
+    <div class="answers">
+        <input type="radio" id="q4-1" name="q4" value="1"><label for="q4-1">1) 祖先</label>
+        <input type="radio" id="q4-2" name="q4" value="2"><label for="q4-2">2) 迷子</label>
+        <input type="radio" id="q4-3" name="q4" value="3"><label for="q4-3">3) 介護</label>
+        <input type="radio" id="q4-4" name="q4" value="4"><label for="q4-4">4) 人間</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>5. あの学生は勉強もできるし、スポーツも得意だそうだ。（　　　）有望だね。</h3>
+    <div class="answers">
+        <input type="radio" id="q5-1" name="q5" value="1"><label for="q5-1">1) 未来</label>
+        <input type="radio" id="q5-2" name="q5" value="2"><label for="q5-2">2) 将来</label>
+        <input type="radio" id="q5-3" name="q5" value="3"><label for="q5-3">3) 才能</label>
+        <input type="radio" id="q5-4" name="q5" value="4"><label for="q5-4">4) 能力</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>6. 昨日、友達の妻が（　　　）しました。</h3>
+    <div class="answers">
+        <input type="radio" id="q6-1" name="q6" value="1"><label for="q6-1">1) 出産</label>
+        <input type="radio" id="q6-2" name="q6" value="2"><label for="q6-2">2) 睡眠</label>
+        <input type="radio" id="q6-3" name="q6" value="3"><label for="q6-3">3) 共働き</label>
+        <input type="radio" id="q6-4" name="q6" value="4"><label for="q6-4">4) 夫婦</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>7. 彼女は幼い頃から芸術に対する（　　　）があります。</h3>
+    <div class="answers">
+        <input type="radio" id="q7-1" name="q7" value="1"><label for="q7-1">1) 真似</label>
+        <input type="radio" id="q7-2" name="q7" value="2"><label for="q7-2">2) 才能</label>
+        <input type="radio" id="q7-3" name="q7" value="3"><label for="q7-3">3) 能力</label>
+        <input type="radio" id="q7-4" name="q7" value="4"><label for="q7-4">4) 筆者</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>8. 年をとると、親の（　　　）がますます必要になります。</h3>
+    <div class="answers">
+        <input type="radio" id="q8-1" name="q8" value="1"><label for="q8-1">1) 介護</label>
+        <input type="radio" id="q8-2" name="q8" value="2"><label for="q8-2">2) 祖先</label>
+        <input type="radio" id="q8-3" name="q8" value="3"><label for="q8-3">3) 双子</label>
+        <input type="radio" id="q8-4" name="q8" value="4"><label for="q8-4">4) 筆者</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>9. 彼女は（　　　）で、兄弟がいます。</h3>
+    <div class="answers">
+        <input type="radio" id="q9-1" name="q9" value="1"><label for="q9-1">1) 親戚</label>
+        <input type="radio" id="q9-2" name="q9" value="2"><label for="q9-2">2) 長男</label>
+        <input type="radio" id="q9-3" name="q9" value="3"><label for="q9-3">3) 双子</label>
+        <input type="radio" id="q9-4" name="q9" value="4"><label for="q9-4">4) 筆者</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>10. 成功するためには、自分の（　　　）を最大限に活かすことが大切です。</h3>
+    <div class="answers">
+        <input type="radio" id="q10-1" name="q10" value="1"><label for="q10-1">1) 親戚</label>
+        <input type="radio" id="q10-2" name="q10" value="2"><label for="q10-2">2) 味方</label>
+        <input type="radio" id="q10-3" name="q10" value="3"><label for="q10-3">3) 能力</label>
+        <input type="radio" id="q10-4" name="q10" value="4"><label for="q10-4">4) 睡眠</label>
+    </div>
+</div>
+
+
+
+<h3>問題 2:               の言葉に意味が最も近いものを、1・2・3・4 から 一つ 選びなさい。</h3>
+<div class="question">
+    <h3>11. 日本に親戚がいますか。</h3>
+    <div class="answers">
+        <input type="radio" id="q11-1" name="q11" value="1"><label for="q11-1">1) 親類</label>
+        <input type="radio" id="q11-2" name="q11" value="2"><label for="q11-2">2) 友だち</label>
+        <input type="radio" id="q11-3" name="q11" value="3"><label for="q11-3">3) 両親</label>
+        <input type="radio" id="q11-4" name="q11" value="4"><label for="q11-4">4) 恋人</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>12. この文章の筆者は誰か分かりますか？</h3>
+    <div class="answers">
+        <input type="radio" id="q12-1" name="q12" value="1"><label for="q12-1">1) 監督</label>
+        <input type="radio" id="q12-2" name="q12" value="2"><label for="q12-2">2) 選手</label>
+        <input type="radio" id="q12-3" name="q12" value="3"><label for="q12-3">3) 作者</label>
+        <input type="radio" id="q12-4" name="q12" value="4"><label for="q12-4">4) 警察</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>13. 応援してくれる見方は一人もいないなんてさびしい。</h3>
+    <div class="answers">
+        <input type="radio" id="q13-1" name="q13" value="1"><label for="q13-1">1) 敵</label>
+        <input type="radio" id="q13-2" name="q13" value="2"><label for="q13-2">2) 仲間</label>
+        <input type="radio" id="q13-3" name="q13" value="3"><label for="q13-3">3) 彼氏</label>
+        <input type="radio" id="q13-4" name="q13" value="4"><label for="q13-4">4) 兄弟</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>14. 彼女は非常に優れた能力を持っており、多くの人に尊敬されています。</h3>
+    <div class="answers">
+        <input type="radio" id="q14-1" name="q14" value="1"><label for="q14-1">1) 才能</label>
+        <input type="radio" id="q14-2" name="q14" value="2"><label for="q14-2">2) 技術</label>
+        <input type="radio" id="q14-3" name="q14" value="3"><label for="q14-3">3) 本能</label>
+        <input type="radio" id="q14-4" name="q14" value="4"><label for="q14-4">4) 力量</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>15. 最近、睡眠不足で疲れがたまっています。</h3>
+    <div class="answers">
+        <input type="radio" id="q15-1" name="q15" value="1"><label for="q15-1">1) 飢餓</label>
+        <input type="radio" id="q15-2" name="q15" value="2"><label for="q15-2">2) 休息</label>
+        <input type="radio" id="q15-3" name="q15" value="3"><label for="q15-3">3) 仮眠</label>
+        <input type="radio" id="q15-4" name="q15" value="4"><label for="q15-4">4) 眠り</label>
+    </div>
+</div>
+
+
+
+
+<h3>問題 3: 次の言葉の使い方として最もよいものを、1・2・3・4 から一つ 選びなさい。</h3>
+<div class="question">
+    <h3>16. 家事</h3>
+    <div class="answers">
+        <input type="radio" id="q16-1" name="q16" value="1"><label for="q16-1">1) 昨晩、近くに家事の事件があったよ。</label>
+        <input type="radio" id="q16-2" name="q16" value="2"><label for="q16-2">2) あの二人はよく似ていますが、家事ですか。</label>
+        <input type="radio" id="q16-3" name="q16" value="3"><label for="q16-3">3) 家事ができる女性と結婚したいです。</label>
+        <input type="radio" id="q16-4" name="q16" value="4"><label for="q16-4">4) 家事が出ないので、何も食べたくない。</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>17. 共働き</h3>
+    <div class="answers">
+        <input type="radio" id="q17-1" name="q17" value="1"><label for="q17-1">1) 道に迷って、共働きになってしまった。</label>
+        <input type="radio" id="q17-2" name="q17" value="2"><label for="q17-2">2) うちで共働きをしている夫婦がいます。</label>
+        <input type="radio" id="q17-3" name="q17" value="3"><label for="q17-3">3) 世界中の人々の共働きが長くなっている。</label>
+        <input type="radio" id="q17-4" name="q17" value="4"><label for="q17-4">4) 私はたまに外で共働きをしています。</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>18. 睡眠</h3>
+    <div class="answers">
+        <input type="radio" id="q18-1" name="q18" value="1"><label for="q18-1">1) 彼は毎晩、十分な睡眠を取るように心がけている。</label>
+        <input type="radio" id="q18-2" name="q18" value="2"><label for="q18-2">2) 子供は学校の宿題のために睡眠して、今は眠いです。</label>
+        <input type="radio" id="q18-3" name="q18" value="3"><label for="q18-3">3) 新しい映画を見て、夜更かししてしまい、睡眠十分になった。</label>
+        <input type="radio" id="q18-4" name="q18" value="4"><label for="q18-4">4) 仕事のストレスからくる睡眠が増加している。</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>19. 外食</h3>
+    <div class="answers">
+        <input type="radio" id="q19-1" name="q19" value="1"><label for="q19-1">1) あの子は頭がよくて、外食も多いです。</label>
+        <input type="radio" id="q19-2" name="q19" value="2"><label for="q19-2">2) 健康のためには、自炊の方が外食よりも良い。</label>
+        <input type="radio" id="q19-3" name="q19" value="3"><label for="q19-3">3) 能力を向上させるために、外食が必要です。</label>
+        <input type="radio" id="q19-4" name="q19" value="4"><label for="q19-4">4) 最近は外食産業が発展し、多様なレストランが増えている。</label>
+    </div>
+</div>
+
+<div class="question">
+    <h3>20. 迷子</h3>
+    <div class="answers">
+        <input type="radio" id="q20-1" name="q20" value="1"><label for="q20-1">1) 大きなショッピングモールで子供が迷子になった。</label>
+        <input type="radio" id="q20-2" name="q20" value="2"><label for="q20-2">2) 迷子が死んで、悲しかったです。</label>
+        <input type="radio" id="q20-3" name="q20" value="3"><label for="q20-3">3) 夫婦は同じ会社で迷子した。</label>
+        <input type="radio" id="q20-4" name="q20" value="4"><label for="q20-4">4) 私の下には迷子が二人います。</label>
+    </div>
+</div>
+<button class="check-btn" onclick="checkAnswers()">Check</button>
+
+<p id="result"></p>
+
+<script>
+    function checkAnswers() {
+        const answers = {
+            q1: '3',
+            q2: '4',
+            q3: '4',
+            q4: '1',
+            q5: '2',
+            q6: '1',
+            q7: '2',
+            q8: '1',
+            q9: '3',
+            q10: '3',
+            q11: '1',
+            q12: '3',
+            q13: '2',
+            q14: '1',
+            q15: '4',
+            q16: '3',
+            q17: '2',
+            q18: '1',
+            q19: '2',
+            q20: '1'
+        };
+
+        let score = 0;
+        let answered = 0;
+        const totalQuestions = Object.keys(answers).length;
+
+        for (const [question, correctAnswer] of Object.entries(answers)) {
+            const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+            const labels = document.querySelectorAll(`input[name="${question}"] + label`);
+
+            if (selectedAnswer) {
+                answered++;
+                if (selectedAnswer.value === correctAnswer) {
+                    score++;
+                    document.querySelector(`input[name="${question}"][value="${correctAnswer}"] + label`).classList.add('correct');
+                } else {
+                    document.querySelector(`input[name="${question}"][value="${correctAnswer}"] + label`).classList.add('correct');
+                    selectedAnswer.nextElementSibling.classList.add('incorrect');
+                }
+            }
+        }
+
+        if (answered > 0) {
+            document.getElementById('result').innerText = `Bạn đã làm đúng ${score} câu trên ${totalQuestions} câu.`;
+        } else {
+            document.getElementById('result').innerText = "Vui lòng trả lời ít nhất một câu hỏi.";
+        }
+    }
+</script>
+
+</body>
+</html>
